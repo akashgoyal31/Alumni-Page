@@ -1,0 +1,240 @@
+/* Alumni page Css */
+
+.container {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  justify-items: center;
+
+}
+
+.box {
+  margin: 2px 20px;
+
+
+}
+
+.box .card .icon {
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background: #2c73df;
+
+}
+
+.box .card .icon .fa {
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  font-size: 80px;
+
+  color: #fff;
+
+}
+
+.box .card .slide {
+
+  width: 300px;
+
+  height: 200px;
+
+  transition: 0.5s;
+
+}
+
+.box .card .slide.slide1 {
+
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  z-index: 1;
+
+  transition: .7s;
+
+  transform: translateY(100px);
+
+}
+
+.box .card:hover .slide.slide1 {
+
+  transform: translateY(0px);
+
+}
+
+.box .card .slide.slide2 {
+
+  position: relative;
+
+
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  transition: .8s;
+
+  transform: translateY(-100px);
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+
+}
+
+.box .card:hover .slide.slide2 {
+
+  transform: translateY(0);
+
+}
+
+.box .card .slide.slide2::after {
+
+  content: "";
+
+  position: absolute;
+
+  width: 30px;
+
+  height: 4px;
+
+  bottom: 15px;
+
+  left: 50%;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background: #2c73df;
+
+}
+
+.box .card {
+  z-index: -2;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1015px) {
+  .container {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-items: center;
+  }
+
+  #navbar {
+    flex-direction: column;
+  }
+
+  #navbar ul li a {
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+  }
+
+  #home {
+    height: 370px;
+    padding: 3px 28px;
+  }
+
+  #home::before {
+    height: 480px;
+  }
+
+  #home p {
+    font-size: 13px;
+  }
+}
+
+
+@media only screen and (max-width: 710px) {
+  .container {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+}
+
+@media only screen and (max-width: 502px) {
+  navbar {
+
+    height: 50px;
+    width: 100%;
+  }
+
+  #navbar ul li a {
+    font-size: 0.5rem;
+    padding: 0px 5px;
+    padding-bottom: 8px;
+  }
+
+  #logo img {
+    display: flex;
+    height: 45px;
+    margin: -10px -10px;
+  }
+
+  #navbar::before {
+    width: 100%;
+  }
+}
+
+
+
+
+
+/* Social Media  */
+
+ .content{
+  text-align: center;
+}
+.social-links a {
+   
+   text-align: center;
+   text-decoration: none;
+   color: #000;
+   box-shadow: 0 0 5px 5px  #1877f2;
+   margin: 0px 23px;
+   border-radius: 50%;
+   position: relative;
+   overflow: hidden;
+   transition: transform 0.5s;
+ }
+
+ .social-links a::after {
+   content: '';
+  
+   background: #000;
+   background: linear-gradient(-45deg, #ed1c94,  #1877f2);
+   position: absolute;
+   transition: 0.5s;
+ }
+ .hero{
+   margin-top: 40px;
+ }
+
+

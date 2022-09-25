@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Alumni-Page/static/css/main.07b3d28c.css",
+    "main.js": "/Alumni-Page/static/js/main.50170577.js",
+    "static/js/787.cb59c158.chunk.js": "/Alumni-Page/static/js/787.cb59c158.chunk.js",
+    "static/media/facebook.ico": "/Alumni-Page/static/media/facebook.1dc0274d7a44b4f4c732.ico",
+    "static/media/linkedin.ico": "/Alumni-Page/static/media/linkedin.20ba50977ac418800b76.ico",
+    "static/media/twitter.ico": "/Alumni-Page/static/media/twitter.50425fe13050e8b3e58b.ico",
+    "index.html": "/Alumni-Page/index.html",
+    "main.07b3d28c.css.map": "/Alumni-Page/static/css/main.07b3d28c.css.map",
+    "main.50170577.js.map": "/Alumni-Page/static/js/main.50170577.js.map",
+    "787.cb59c158.chunk.js.map": "/Alumni-Page/static/js/787.cb59c158.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07b3d28c.css",
+    "static/js/main.50170577.js"
+  ]
+}

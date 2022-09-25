@@ -1,0 +1,436 @@
+/* Navbar */
+* {
+  text-decoration: none;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+  display: table;
+  position: relative;
+}
+h1 {
+  margin: 0px auto;
+  display: table;
+  font-size: 26px;
+  padding: 40px 0px;
+  color: #002e5b;
+  text-align: center;
+}
+h1 span {
+  font-weight: 500;
+}
+
+header {
+  width: 100%;
+  display: table;
+  position: absolute;
+  background-color: #fde428;
+  z-index : -3;
+} 
+  #logo {
+    
+    position: relative;
+    top: -22px;
+    left: -48px;
+    width: 130px !important;
+    height: 131px !important;
+    
+ 
+  }
+  #club-name{
+  
+    display: inline-block;
+    position: relative;
+
+    top: -1px;
+    left: -52px;
+    font-size: 27px;
+    text-transform: uppercase;
+    color: #002e5b;
+    font-weight: 600;
+    padding: 16px 0px;
+    cursor: pointer;
+    margin-bottom: -30px;
+  }
+  #club-name h6{
+    display: inline-block;
+    font-size: 19px;
+    margin: 3px 0px;
+   
+
+  }
+  #logo {
+    float: left;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #002e5b;
+    font-weight: 600;
+    padding: 16px 22px;
+    cursor: pointer;
+    margin-bottom: 22px;
+  }
+  #navigation {
+    width: auto;
+    float: right;
+  }
+  #navigation ul {
+    display: table;
+    float: right;
+  }
+  #navigation ul li {
+    float: left;
+  }
+  #navigation ul li:last-child {
+    padding-right: 0px;
+  }
+  #navigation ul li a {
+    color: #002e5b;
+    font-size: 19px;
+    padding: 15px 15px;
+    display: inline-block;
+    transition: all 0.5s ease 0s;
+    border-radius: 8px;
+    position: relative;
+    top: 8px;
+  }
+  #navigation ul li a:hover {
+    background-color: #002e5b;
+    color: #fde428;
+    transition: all 0.5s ease 0s;
+  }
+  #navigation ul li a:hover i {
+    color: #fde428;
+    transition: all 0.5s ease 0s;
+  }
+  #navigation ul li a i {
+    padding-right: 10px;
+    color: #002e5b;
+    transition: all 0.5s ease 0s;
+  }
+  
+  .toggle-menu ul {
+    display: table;
+    width: 25px;
+    margin-top: 15px;
+  }   
+  .toggle-menu ul li {
+    width: 100%;
+    height: 3px;
+    background-color: #002e5b;
+    margin-bottom: 4px;
+  }
+  .toggle-menu ul li:last-child {
+    margin-bottom: 0px;
+  }
+  
+  input[type="checkbox"],
+  label {
+    display:none;
+  }
+
+
+
+      /* navigation  */
+
+
+  @media only screen and (max-height: 1440px) {
+    section {
+      max-width: 95%;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 980px) {
+    header {
+      padding: 5px 0px;
+    }
+    #logo {
+      padding: 16px;
+    }
+    input[type="checkbox"] {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+      background: none;
+    }
+    input[type="checkbox"]:fous {
+      background: none;
+    }
+    label {
+      float: right;
+      padding: 8px 0px;
+      display: inline-block;
+      cursor: pointer;
+    }
+    input[type="checkbox"]:checked ~ #navigation {
+      display: block;
+    }
+  
+    #navigation {
+      display: none;
+      position: absolute;
+      right: 0px;
+      top: 53px;
+      background-color: #002e5b;
+      padding: 0px;
+      z-index: 99;
+    }
+    #navigation ul {
+      width: auto;
+    }
+    #navigation ul li {
+      float: none;
+      padding: 0px;
+      width: 100%;
+      display: table;
+    }
+    #navigation ul li a {
+      color: #fff;
+      font-size: 15px;
+      padding: 10px 20px;
+      display: block;
+      border-bottom: 1px solid rgba(225, 225, 225, 0.1);
+    }
+    #navigation ul li a i {
+      color: #fde428;
+      padding-right: 13px;
+    }
+  }
+  
+  @media only screen and (max-width: 980px) {
+    .content {
+      width: 90%;
+    }
+  }
+  
+  @media only screen and (max-width: 568px) {
+    h1 {
+      padding: 25px 0px;
+    }
+    h1 span {
+      display: block;
+    }
+  }
+  
+  @media only screen and (max-width: 490px) {
+    section {
+      max-width: 90%;
+    }
+
+  
+  }
+  
+  @media only screen and (max-width: 390px) {
+    #club-name{
+      font-size: 18px;
+      font-weight: 600;
+      position: relative;
+
+      top: -1px;
+      left: -74px;
+    }
+    #club-name h6{
+   
+      font-size: 12px;
+    }
+    #logo {
+    
+      position: relative;
+      top: -22px;
+      left: -48px;
+      width: 110px !important;
+      height: 111px !important;
+   
+   
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    h1 {
+      padding: 20px 0px;
+    }
+  } 
+  
+  
+  /* background */
+
+
+   h2 {
+    position: relative;
+    top: 440px;
+    font-size: 6em;
+    letter-spacing: 20px;
+    color: white;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, white);
+    line-height: 0.7em;
+    outline: none;
+    animation: animate 10000s linear infinite  alternate-reverse;
+    text-shadow: 0 0 80px cyan;
+  }
+  
+  @keyframes animate {
+    100% {
+      text-shadow: 0 0 20px cyan, 0 0 40px cyan, 0 0 80px cyan, 0 0 160px cyan;
+    }
+  }
+  
+  .bg {
+    background: url(https://wallpapertag.com/wallpaper/full/7/8/9/792411-rainbow-stars-backgrounds-2300x1777-meizu.jpg) no-repeat;
+    background-size: cover;
+    height: 82%;
+    width: 100%;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    z-index: -3;
+    margin-bottom: 100px;
+  }
+  .bg:before {
+    content: "";
+    width: 100%;
+    height: 99%;
+    background: #000;
+    position: absolute;
+    z-index:-2;
+    top: 3px;
+    left: 0;
+    opacity: 0.3;
+    margin-bottom: 100px;
+  }
+  @keyframes sf-fly-by-1 {
+    from {
+        transform: translateZ(-600px);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateZ(0);
+        opacity: 0.5;
+    }
+  }
+  @keyframes sf-fly-by-2 {
+    from {
+        transform: translateZ(-1200px);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateZ(-600px);
+        opacity: 0.5;
+    }
+  }
+  @keyframes sf-fly-by-3 {
+    from {
+        transform: translateZ(-1800px);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateZ(-1200px);
+        opacity: 0.5;
+    }
+  }
+  .star-field {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+     perspective: 600px;
+    z-index: -1;
+  }
+  .star-field .layer {
+    box-shadow: -411px -476px #cccccc, 777px -407px #d4d4d4, -387px -477px #fcfcfc, -91px -235px #d4d4d4, 491px -460px #f7f7f7, 892px -128px #f7f7f7, 758px -277px #ededed, 596px 378px #cccccc, 647px 423px whitesmoke, 183px 389px #c7c7c7,
+        524px -237px #f0f0f0, 679px -535px #e3e3e3, 158px 399px #ededed, 157px 249px #ededed, 81px -450px #ebebeb, 719px -360px #c2c2c2, -499px 473px #e8e8e8, -158px -349px #d4d4d4, 870px -134px #cfcfcf, 446px 404px #c2c2c2,
+        440px 490px #d4d4d4, 414px 507px #e6e6e6, -12px 246px #fcfcfc, -384px 369px #e3e3e3, 641px -413px #fcfcfc, 822px 516px #dbdbdb, 449px 132px #c2c2c2, 727px 146px #f7f7f7, -315px -488px #e6e6e6, 952px -70px #e3e3e3,
+        -869px -29px #dbdbdb, 502px 80px #dedede, 764px 342px #e0e0e0, -150px -380px #dbdbdb, 654px -426px #e3e3e3, -325px -263px #c2c2c2, 755px -447px #c7c7c7, 729px -177px #c2c2c2, -682px -391px #e6e6e6, 554px -176px #ededed,
+        -85px -428px #d9d9d9, 714px 55px #e8e8e8, 359px -285px #cfcfcf, -362px -508px #dedede, 468px -265px #fcfcfc, 74px -500px #c7c7c7, -514px 383px #dbdbdb, 730px -92px #cfcfcf, -112px 287px #c9c9c9, -853px 79px #d6d6d6,
+        828px 475px #d6d6d6, -681px 13px #fafafa, -176px 209px #f0f0f0, 758px 457px #fafafa, -383px -454px #ededed, 813px 179px #d1d1d1, 608px 98px whitesmoke, -860px -65px #c4c4c4, -572px 272px #f7f7f7, 459px 533px #fcfcfc,
+        624px -481px #e6e6e6, 790px 477px #dedede, 731px -403px #ededed, 70px -534px #cccccc, -23px 510px #cfcfcf, -652px -237px whitesmoke, -690px 367px #d1d1d1, 810px 536px #d1d1d1, 774px 293px #c9c9c9, -362px 97px #c2c2c2,
+        563px 47px #dedede, 313px 475px #e0e0e0, 839px -491px #e3e3e3, -217px 377px #d4d4d4, -581px 239px #c2c2c2, -857px 72px #cccccc, -23px 340px #dedede, -837px 246px white, 170px -502px #cfcfcf, 822px -443px #e0e0e0, 795px 497px #e0e0e0,
+        -814px -337px #cfcfcf, 206px -339px #f2f2f2, -779px 108px #e6e6e6, 808px 2px #d4d4d4, 665px 41px #d4d4d4, -564px 64px #cccccc, -380px 74px #cfcfcf, -369px -60px #f7f7f7, 47px -495px #e3e3e3, -383px 368px #f7f7f7, 419px 288px #d1d1d1,
+        -598px -50px #c2c2c2, -833px 187px #c4c4c4, 378px 325px whitesmoke, -703px 375px #d6d6d6, 392px 520px #d9d9d9, -492px -60px #c4c4c4, 759px 288px #ebebeb, 98px -412px #c4c4c4, -911px -277px #c9c9c9;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 4px;
+    width: 4px;
+    border-radius: 2px;
+  }
+  .star-field .layer:nth-child(1) {
+    animation: sf-fly-by-1 5s linear infinite;
+  }
+  .star-field .layer:nth-child(2) {
+    animation: sf-fly-by-2 5s linear infinite;
+  }
+  .star-field .layer:nth-child(3) {
+    animation: sf-fly-by-3 5s linear infinite;
+  }
+  
+  h2 span {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    animation: bounce .9s ease infinite alternate;
+    font-family: 'Titan One', cursive;
+    font-size: 80px;
+    color:#fff;
+    /* text-shadow: 0 0 200 cyan; */
+  }
+  
+  h2 span:nth-child(2) { animation-delay: .1s; }
+  h2 span:nth-child(3) { animation-delay: .2s; }
+  h2 span:nth-child(4) { animation-delay: .3s; }
+  h2 span:nth-child(5) { animation-delay: .4s; }
+  h2 span:nth-child(6) { animation-delay: .5s; }
+  h2 span:nth-child(7) { animation-delay: .6s; }
+  h2 span:nth-child(8) { animation-delay: .7s; }
+  
+  @keyframes bounce {
+    100% {
+      top: -20px;
+      text-shadow: 0 0 200px cyan
+    }
+  }
+  
+  
+  
+  
+  @media only screen and (max-width: 460px) {
+    /* For mobile phones: */
+     h2 span {
+       width: 15%;
+       font-size: 4rem;
+       font-family: 'Titan One', cursive;
+      }
+  }
+  @media only screen and (max-height: 380px) {
+    .bg {
+      height: 172%;
+      width: 100%;
+      position: absolute;
+      top: 120px;
+      left: 0;
+      margin-bottom: 100px;
+    }
+    .bg:before {
+      width: 100%;
+      height: 99%;
+      position: absolute;
+      z-index:-2;
+      top: 3px;
+      left: 0;
+      margin-bottom: 100px;
+    }
+  }
